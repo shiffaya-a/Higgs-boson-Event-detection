@@ -11,15 +11,6 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 
 st.set_page_config(page_title="Higgs Boson", layout="centered")
-features=['der_mass_mmc', 'der_mass_transverse_met_lep', 'der_mass_vis',
-       'pri_tau_pt', 'der_met_phi_centrality', 'der_pt_ratio_lep_tau','der_mass_jet_jet',
-       'der_deltaeta_jet_jet', 'der_sum_pt', 
-       'der_prodeta_jet_jet', 'der_lep_eta_centrality', 'pri_jet_num',
-       'pri_jet_leading_eta', 'der_pt_h', 'pri_met_sumet', 'pri_jet_all_pt',
-       'der_deltar_tau_lep', 'pri_met', 'pri_jet_leading_pt',
-       'pri_jet_subleading_eta', 'pri_lep_eta', 'pri_jet_leading_phi',
-       'pri_jet_subleading_pt', 'pri_tau_eta', 'pri_jet_subleading_phi']
-
 st.markdown("<h1 style='text-align: center;'>Higgs Boson signal prediction </h1>", unsafe_allow_html=True)     
 def main():
     with st.form('prediction_form'):
