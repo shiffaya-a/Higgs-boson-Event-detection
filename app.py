@@ -55,7 +55,7 @@ def main():
         
         submit = st.form_submit_button("Predict")
         if submit:
-            model=load_model(r'Model/hbkfold_kerasModel.h5')
+            model=load_model('Model/hbkfold_kerasModel.h5')
             data=np.array(features).reshape(1,-1)
             scaler=MinMaxScaler()
             X=scaler.fit_transform(data)
